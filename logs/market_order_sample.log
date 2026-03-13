@@ -1,0 +1,15 @@
+2025-07-10 14:22:01 | INFO     | cli | CLI command: order | args: {'command': 'order', 'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'price': None, 'tif': 'GTC'}
+2025-07-10 14:22:01 | INFO     | client | BinanceClient initialized (testnet)
+2025-07-10 14:22:01 | DEBUG    | validators | Starting input validation...
+2025-07-10 14:22:01 | DEBUG    | validators | Symbol validated: BTCUSDT
+2025-07-10 14:22:01 | DEBUG    | validators | Side validated: BUY
+2025-07-10 14:22:01 | DEBUG    | validators | Order type validated: MARKET
+2025-07-10 14:22:01 | DEBUG    | validators | Quantity validated: 0.001
+2025-07-10 14:22:01 | DEBUG    | validators | Price provided for MARKET order — will be ignored.
+2025-07-10 14:22:01 | DEBUG    | validators | All inputs validated: {'symbol': 'BTCUSDT', 'side': 'BUY', 'order_type': 'MARKET', 'quantity': 0.001, 'price': None}
+2025-07-10 14:22:01 | INFO     | client | Placing order → symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stopPrice=None
+2025-07-10 14:22:01 | DEBUG    | client | POST https://testnet.binancefuture.com/fapi/v1/order | params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1720617721843, 'signature': 'a3f9c2b1d...'}
+2025-07-10 14:22:02 | DEBUG    | client | HTTP 200 | URL: https://testnet.binancefuture.com/fapi/v1/order
+2025-07-10 14:22:02 | DEBUG    | client | API response: {'orderId': 3951822764, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJb3e9b0f3c2f1e1', 'price': '0', 'avgPrice': '57823.50', 'origQty': '0.001', 'executedQty': '0.001', 'cumQty': '0.001', 'cumQuote': '57.82350', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'NONE', 'goodTillDate': 0, 'updateTime': 1720617722104}
+2025-07-10 14:22:02 | INFO     | client | Order placed successfully | orderId=3951822764
+2025-07-10 14:22:02 | INFO     | orders | Order success | response={'orderId': 3951822764, 'symbol': 'BTCUSDT', 'status': 'FILLED', 'clientOrderId': 'x-Cb7ytekJb3e9b0f3c2f1e1', 'price': '0', 'avgPrice': '57823.50', 'origQty': '0.001', 'executedQty': '0.001', ...}
